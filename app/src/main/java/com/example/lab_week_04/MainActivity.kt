@@ -12,9 +12,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setSupportActionBar(findViewById(R.id.toolbar))
-        val navHostFragment =
-            supportFragmentManager.findFragmentById(R.id.nav_host_fragment)
-                    as NavHostFragment
+        val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
         val navController = navHostFragment.navController
         //Creating top level destinations
         //and adding them to the draw
